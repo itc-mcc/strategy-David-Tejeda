@@ -1,0 +1,74 @@
+{
+  "tests": [
+    {
+      "name": "testLunes",
+      "setup": "",
+      "run": "gradle test --tests miTiendita.init.AppTest.testLunes",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 14
+    },
+    {
+      "name": "testMartes",
+      "setup": "",
+      "run": "gradle test --tests miTiendita.init.AppTest.testMartes",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 14
+    },
+    {
+      "name": "testMiercoles",
+      "setup": "",
+      "run": "gradle test --tests miTiendita.init.AppTest.testMiercoles",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 14
+    },
+    {
+      "name": "testJueves",
+      "setup": "",
+      "run": "gradle test --tests miTiendita.init.AppTest.testJueves",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 14
+    },
+    {
+      "name": "testViernes",
+      "setup": "",
+      "run": "gradle test --tests miTiendita.init.AppTest.testViernes",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 15
+    },
+    {
+      "name": "testSabado",
+      "setup": "",
+      "run": "gradle test --tests miTiendita.init.AppTest.testSabado",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 15
+    },
+    {
+      "name": "testDomingo",
+      "setup": "",
+      "run": "gradle test --tests miTiendita.init.AppTest.testDomingo",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 14
+    }
+  ]
+}
