@@ -11,4 +11,12 @@ public class LineaDeDetalle {
         this.p = p;
         this.ctd = ctd;
     }
+
+    public double getCtd() {
+        return ctd;
+    }
+
+    public Producto getP() {
+        return p;
+    }
 }
