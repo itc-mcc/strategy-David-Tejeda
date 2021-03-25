@@ -25,7 +25,32 @@ public class Venta {
 
     public void addDescto()
     {
-        if(diaSemana==1){
+
+        switch (diaSemana){
+            case 1:  
+                IDescto = new AdultoMayor();
+                break;
+            case 2:
+                IDescto = new SinDescuento();
+                break;
+            case 3:
+                IDescto = new MenonitaDescuento();
+                break;
+            case 4: 
+                IDescto = new FrutaDescuento();
+                break;
+            case 5: 
+                IDescto = new EmbutidosLacteos();
+                break;
+            case 6: 
+                IDescto = new SinDescuento();
+                break;
+            case 7:
+                IDescto = new AdultoMayor();
+                break;
+        }
+
+ /*       if(diaSemana==1){
             IDescto = new AdultoMayor();
         }
         if(diaSemana==2){
@@ -46,6 +71,7 @@ public class Venta {
         if(diaSemana==7){
             IDescto = new AdultoMayor();
         }
+        */
     }
 
     public double getTotal()
