@@ -25,7 +25,6 @@ public class Venta {
 
     public void addDescto()
     {
-
         switch (diaSemana){
             case 1:  
                 IDescto = new AdultoMayor();
@@ -49,38 +48,14 @@ public class Venta {
                 IDescto = new AdultoMayor();
                 break;
         }
-
- /*       if(diaSemana==1){
-            IDescto = new AdultoMayor();
-        }
-        if(diaSemana==2){
-            IDescto = new SinDescuento();
-        }
-        if(diaSemana==3){
-            IDescto = new MenonitaDescuento();
-        }
-        if(diaSemana==4){
-            IDescto = new FrutaDescuento();
-        }
-        if(diaSemana==5){
-            IDescto = new EmbutidosLacteos();
-        }
-        if(diaSemana==6){
-            IDescto = new SinDescuento();
-        }
-        if(diaSemana==7){
-            IDescto = new AdultoMayor();
-        }
-        */
     }
 
     public double getTotal()
     {
         double total = 0;
-        for (LineaDeDetalle a :
-                this.getLd()) {
+        for (LineaDeDetalle a : this.getLd()) 
             total += (a.getCtd() * a.getP().getPunit());
-        }
+
         return (total- IDescto.getDescto(this)) + .16*(total- IDescto.getDescto(this));
     }
 
