@@ -11,7 +11,7 @@ public class CatProductos {
         productos.add(new Producto(2, "Crema", 10.00));
         productos.add(new Producto(3, "Mantequilla", 4.50));
         productos.add(new Producto(4, "Jamon", 35.00));
-        productos.add(new Producto(5, "Queso", 10.00));
+        productos.add(new Producto(5, "Queso", 100.00));
         productos.add(new Producto(6, "Platano", 14.00));
         productos.add(new Producto(7, "Manzana", 13.00));
     }

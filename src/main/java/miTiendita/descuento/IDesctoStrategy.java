@@ -4,5 +4,5 @@ import miTiendita.venta.Venta;
 
 public interface IDesctoStrategy
 {
-    float getDescto(Venta v);
+    double getDescto(Venta v);
 }
