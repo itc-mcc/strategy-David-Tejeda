@@ -9,16 +9,13 @@ public class FrutaDescuento implements IDesctoStrategy {
     public double getDescto(Venta v) {
        double total=0;
 
-        for (LineaDeDetalle a :
-                v.getLd()) {
-            if(a.getP().getClave()==(6)){
+        for (LineaDeDetalle a : v.getLd()) {
+            if(a.getP().getClave()==(6))
                 total+=(a.getCtd()*a.getP().getPunit())*.15;
-            }
-            if(a.getP().getClave()==(7)){
+            
+            if(a.getP().getClave()==(7))
                 total+=(a.getCtd()*a.getP().getPunit())*.15;
-            }
-        }
 
-        return total;
+        }   return total;
     }
 }

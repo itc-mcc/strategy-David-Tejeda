@@ -9,22 +9,19 @@ public class MenonitaDescuento implements IDesctoStrategy {
     public double getDescto(Venta v) {
         double total=0;
 
-        for (LineaDeDetalle a :
-                v.getLd()) {
-            if(a.getP().getClave()==(1)){
+        for (LineaDeDetalle a : v.getLd()) {
+            if(a.getP().getClave()==(1))
                 total+=(a.getCtd()*a.getP().getPunit())*.10;
-            }
-            if(a.getP().getClave()==(2)){
+            
+            if(a.getP().getClave()==(2))
                 total+=(a.getCtd()*a.getP().getPunit())*.10;
-            }
-            if(a.getP().getClave()==(3)){
+            
+            if(a.getP().getClave()==(3))
                 total+=(a.getCtd()*a.getP().getPunit())*.10;
-            }
-            if(a.getP().getClave()==(5)){
+            
+            if(a.getP().getClave()==(5))
                 total+=(a.getCtd()*a.getP().getPunit())*.10;
-            }
-        }
-
-        return total;
+            
+        }    return total;
     }
 }
